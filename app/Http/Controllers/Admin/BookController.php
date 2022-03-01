@@ -13,7 +13,7 @@ class BookController extends Controller
         return view('admin.book.create');
     }
 
-    public function create()
+    public function create(Request $request)
     {
         return redirect('admin/book/create');
     }
