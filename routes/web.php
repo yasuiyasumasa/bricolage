@@ -11,11 +11,11 @@
 |
 */
 
-// 
+//\ 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
-    Route::get('book/create', 'Admin\BookContoller@add');
-    Route::post('book/create', 'Admin\BookContoller@create');
-    Route::get('book', 'Admin\BookContoller@index');
+    Route::get('book/create', 'Admin\BookController@add');
+    Route::post('book/create', 'Admin\BookController@create');
+    Route::get('book', 'Admin\BookController@index');
     Route::get('book/edit', 'Admin\BookController@edit'); 
     Route::post('book/edit', 'Admin\BookController@update');
     Route::get('book/delete', 'Admin\BookController@delete');
@@ -24,18 +24,18 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::post('book_memo/edit', 'Admin\BookmemoController@update');
     Route::get('book_memo/delete', 'Admin\BookmemoController@delete');
 
-    Route::post('highlight/create', 'Admin\HighlightContoller@create');
-    Route::get('highlight', 'Admin\HighlightContoller@index');
+    Route::post('highlight/create', 'Admin\HighlightController@create');
+    Route::get('highlight', 'Admin\HighlightController@index');
     Route::get('highlight/edit', 'Admin\HighlightController@edit'); 
     Route::post('highlight/edit', 'Admin\HighlightController@update');
     Route::get('highlight/delete', 'Admin\HighlightController@delete');
 
-    Route::post('highlight_memo/create', 'Admin\HighlightmemoContoller@create');
+    Route::post('highlight_memo/create', 'Admin\HighlightmemoController@create');
     Route::get('highlight_memo/edit', 'Admin\HighlightmemoController@edit'); 
     Route::post('highlight_memo/edit', 'Admin\HighlightmemoController@update');
     Route::get('highlight_memo/delete', 'Admin\HighlightmemoController@delete');
 
-    Route::post('keyword/create', 'Admin\KeywordContoller@create');
+    Route::post('keyword/create', 'Admin\KeywordController@create');
     Route::get('keyword/edit', 'Admin\KeywordController@edit'); 
     Route::post('keyword/edit', 'Admin\KeywordController@update');
     Route::get('keyword/delete', 'Admin\KeywordController@delete');

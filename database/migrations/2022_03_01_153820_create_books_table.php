@@ -25,6 +25,7 @@ class CreateBooksTable extends Migration
         });
     }
 
+    
     /**
      * Reverse the migrations.
      *

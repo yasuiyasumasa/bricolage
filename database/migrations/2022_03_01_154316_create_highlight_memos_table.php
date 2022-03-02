@@ -15,6 +15,8 @@ class CreateHighlightMemosTable extends Migration
     {
         Schema::create('highlight_memos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('highlight_id');
+            $table->string('highlight_memo');
             $table->timestamps();
         });
     }

@@ -15,6 +15,10 @@ class CreateBookMemosTable extends Migration
     {
         Schema::create('book_memos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('books_id');
+            $table->string('day_you_read');
+            $table->string('book_memos');
+
             $table->timestamps();
         });
     }

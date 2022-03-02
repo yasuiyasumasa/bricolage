@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateHighlightsTable extends Migration
+class CreateHighlightVocabularyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateHighlightsTable extends Migration
      */
     public function up()
     {
-        Schema::create('highlights', function (Blueprint $table) {
+        Schema::create('highlight_vocabulary', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('highlight');
-            $table->string('page');
-            $table->string('highlight_memo_id');
-            $table->string('keyword_id');
+            $table->string('highlight_id');
+            $table->string('vocabulary_id');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateHighlightsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('highlights');
+        Schema::dropIfExists('highlight_vocabulary');
     }
 }
