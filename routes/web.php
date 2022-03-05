@@ -12,37 +12,37 @@
 */
 
 //\ 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
-    Route::get('book/create', 'Admin\BookController@add');
-    Route::post('book/create', 'Admin\BookController@create');
-    Route::get('book', 'Admin\BookController@index');
-    Route::get('book/edit', 'Admin\BookController@edit'); 
-    Route::post('book/edit', 'Admin\BookController@update');
-    Route::get('book/delete', 'Admin\BookController@delete');
+Route::group(['prefix' => 'user', 'middleware' => 'auth'], function() {
+    Route::get('book/create', 'User\BookController@add');
+    Route::post('book/create', 'User\BookController@create');
+    Route::get('book', 'User\BookController@index');
+    Route::get('book/edit', 'User\BookController@edit'); 
+    Route::post('book/edit', 'User\BookController@update');
+    Route::get('book/delete', 'User\BookController@delete');
 
-    Route::get('book_memo/edit', 'Admin\BookmemoController@edit'); 
-    Route::post('book_memo/edit', 'Admin\BookmemoController@update');
-    Route::get('book_memo/delete', 'Admin\BookmemoController@delete');
+    Route::get('book_memo/edit', 'User\BookmemoController@edit'); 
+    Route::post('book_memo/edit', 'User\BookmemoController@update');
+    Route::get('book_memo/delete', 'User\BookmemoController@delete');
 
-    Route::post('highlight/create', 'Admin\HighlightController@create');
-    Route::get('highlight', 'Admin\HighlightController@index');
-    Route::get('highlight/edit', 'Admin\HighlightController@edit'); 
-    Route::post('highlight/edit', 'Admin\HighlightController@update');
-    Route::get('highlight/delete', 'Admin\HighlightController@delete');
+    Route::post('highlight/create', 'User\HighlightController@create');
+    Route::get('highlight', 'User\HighlightController@index');
+    Route::get('highlight/edit', 'User\HighlightController@edit'); 
+    Route::post('highlight/edit', 'User\HighlightController@update');
+    Route::get('highlight/delete', 'User\HighlightController@delete');
 
-    Route::post('highlight_memo/create', 'Admin\HighlightmemoController@create');
-    Route::get('highlight_memo/edit', 'Admin\HighlightmemoController@edit'); 
-    Route::post('highlight_memo/edit', 'Admin\HighlightmemoController@update');
-    Route::get('highlight_memo/delete', 'Admin\HighlightmemoController@delete');
+    Route::post('highlight_memo/create', 'User\HighlightmemoController@create');
+    Route::get('highlight_memo/edit', 'User\HighlightmemoController@edit'); 
+    Route::post('highlight_memo/edit', 'User\HighlightmemoController@update');
+    Route::get('highlight_memo/delete', 'User\HighlightmemoController@delete');
 
-    Route::post('keyword/create', 'Admin\KeywordController@create');
-    Route::get('keyword/edit', 'Admin\KeywordController@edit'); 
-    Route::post('keyword/edit', 'Admin\KeywordController@update');
-    Route::get('keyword/delete', 'Admin\KeywordController@delete');
+    Route::post('keyword/create', 'User\KeywordController@create');
+    Route::get('keyword/edit', 'User\KeywordController@edit'); 
+    Route::post('keyword/edit', 'User\KeywordController@update');
+    Route::get('keyword/delete', 'User\KeywordController@delete');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'BookController@index');
+Route::get('/', 'User\BookController@index');
 Route::get('/highlight', 'HighlightController@index');

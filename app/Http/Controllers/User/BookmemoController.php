@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -11,17 +11,17 @@ class BookmemoController extends Controller
 
     public function edit()
     {
-        return view('admin.book_memo.edit');
+        return view('user.book_memo.edit');
     }
 
     public function update()
     {
-        return redirect('admin/book_memo/edit');
+        return redirect('user/book_memo/edit');
     }
 
     public function delete()
     {
-        return redirect('admin/book_memo');
+        return redirect('user/book_memo');
     }
     
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -10,32 +10,32 @@ class BookController extends Controller
     // 2022/02/25記載
     public function add()
     {
-        return view('admin.book.create');
+        return view('user.book.create');
     }
 
     public function create(Request $request)
     {
-        return redirect('admin/book/create');
+        return redirect('user/book/create');
     }
 
     public function index()
     {
-        return view('admin/book');
+        return view('user.book.index');
     }
 
     public function edit()
     {
-        return view('admin.book.edit');
+        return view('user.book.edit');
     }
 
     public function update()
     {
-        return redirect('admin/book/edit');
+        return redirect('user/book/edit');
     }
 
     public function delete()
     {
-        return redirect('admin/book');
+        return redirect('user/book');
     }
 
 }
