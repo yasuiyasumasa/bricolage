@@ -10,7 +10,7 @@ class HomeController extends Controller
     // 2022/02/25記載
     public function add()
     {
-        return view('admin.home');
+        return view('user.home');
     }
 
 }

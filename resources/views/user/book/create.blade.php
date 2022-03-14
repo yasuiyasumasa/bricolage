@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.user')
 
 @section('title', '書籍の登録')
 
@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-md-8 mx-auto">
         <h2>書籍の登録</h2>
-        <form action="{{ action('Admin\BookController@create') }}" method="post" enctype="multipart/from-data">
+        <form action="{{ action('Uesr\BookController@create') }}" method="post" enctype="multipart/from-data">
           @if (count($errors) > 0)
             <ul>
              @foreach($errors->all() as $e)

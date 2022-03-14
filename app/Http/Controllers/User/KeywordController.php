@@ -9,21 +9,21 @@ class KeywordController extends Controller
 {
     public function create()
     {
-        return redirect('admin/keyword/create');
+        return redirect('user/keyword/create');
     }
 
     public function edit()
     {
-        return view('admin.keyword.edit');
+        return view('user.keyword.edit');
     }
 
     public function update()
     {
-        return redirect('admin/keyword/edit');
+        return redirect('user/keyword/edit');
     }
 
     public function delete()
     {
-        return redirect('admin/keyword');
+        return redirect('user/keyword');
     }
 }

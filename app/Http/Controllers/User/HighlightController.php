@@ -10,31 +10,31 @@ class HighlightController extends Controller
     // 2022/02/25記載
     public function add()
     {
-        return view('admin.highlight.create');
+        return view('user.highlight.create');
     }
 
     public function create()
     {
-        return redirect('admin/highlight/create');
+        return redirect('user/highlight/create');
     }
 
     public function index()
     {
-        return view('admin/highlight');
+        return view('user/highlight');
     }
 
     public function edit()
     {
-        return view('admin.highlight.edit');
+        return view('user.highlight.edit');
     }
 
     public function update()
     {
-        return redirect('admin/highlight/edit');
+        return redirect('user/highlight/edit');
     }
 
     public function delete()
     {
-        return redirect('admin/highlight');
+        return redirect('user/highlight');
     }
 }
