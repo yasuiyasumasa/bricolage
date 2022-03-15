@@ -1,7 +1,5 @@
 @extends('layouts.user')
-
 @section('title', 'home')
-
 @section('content')
   <div class="container">
     <div class="row">
@@ -13,7 +11,7 @@
         <h2>この材料・道具は家に置いてあると後々に便利</h2>
         <h2>という感覚がある</h2>
         <h2>その感覚を読書にも取り入れたいとおもい</h2>
-        <h2>この名を付けました</h2>
+        <h2>この名を付けました!!</h2>
         <a href="">独学の技法 山口周</a>
       </div>
     </div>

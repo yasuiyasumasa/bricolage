@@ -44,5 +44,5 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth'], function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'User\BookController@index');
+Route::get('/', 'HomeController@index');
 Route::get('/highlight', 'HighlightController@index');
