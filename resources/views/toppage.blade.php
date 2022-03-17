@@ -1,11 +1,11 @@
-@extends('layouts.common')
+@extends('layouts.user')
 @section('title', 'bricolage')
 @section('content')
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <h2>ブリコラージュ bricolage”とは</h2>
-        <h2>フランス語の”日曜大工 ”という意味である</h2>
+        <h2>"ブリコラージュ bricolage”とは</h2>
+        <h2>フランス語の”日曜大工”という意味である</h2>
         <h2>日曜大工には、自分で何かを作るために</h2>
         <h2>今は何の役に立つかわからないけども</h2>
         <h2>この材料や道具は家に置いてあると後々に便利</h2>

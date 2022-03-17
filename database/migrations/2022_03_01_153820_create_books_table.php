@@ -20,7 +20,7 @@ class CreateBooksTable extends Migration
             $table->string('author');
             $table->string('publisher')->nullable();
             $table->string('first_issue_date')->nullable();
-            $table->string('isbn_code');
+            $table->string('isbn_code')->nullable();
             $table->timestamps();
         });
     }

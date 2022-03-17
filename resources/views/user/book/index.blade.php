@@ -1,19 +1,42 @@
 @extends('layouts.user')
-@section('title', 'home')
+@section('title', '本棚')
+
 @section('content')
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <h2>ブリコラージュ bricolage”とは</h2>
-        <h2>フランス語の”日曜大工 ”という意味である</h2>
-        <h2>日曜大工には、自分で何かを作ることを前提にして</h2>
-        <h2>今は何の役に立つかわからないけども</h2>
-        <h2>この材料・道具は家に置いてあると後々に便利</h2>
-        <h2>という感覚がある</h2>
-        <h2>その感覚を読書にも取り入れたいとおもい</h2>
-        <h2>この名を付けました!!</h2>
-        <a href="">独学の技法 山口周</a>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2>本棚</h2>
+                <form action="{{ action('User\BookController@create') }}" method="post" enctype="multipart/form-data">
+
+                    @if (count($errors) > 0)
+                        <ul>
+                            @foreach($errors->all() as $e)
+                                <li>{{ $e }}</li>
+                            @endforeach
+                        </ul>
+                    @endif
+                    <div class="form-group row">
+                        <label class="col-md-2">タイトル</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2">本文</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2">画像</label>
+                        <div class="col-md-10">
+                            <input type="file" class="form-control-file" name="image">
+                        </div>
+                    </div>
+                    {{ csrf_field() }}
+                    <input type="submit" class="btn btn-primary" value="更新">
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 @endsection

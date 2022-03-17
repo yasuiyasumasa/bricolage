@@ -1,14 +1,12 @@
 <?php
 
 namespace App\Http\Controllers\User;
-
 use Illuminate\Http\Request;
-
 use App\Http\Controllers\Controller;
+use App\Book;
 
 class BookController extends Controller
 {
-    // 2022/02/25記載
     public function add()
     {
         return view('user.book.create');
@@ -16,6 +14,15 @@ class BookController extends Controller
 
     public function create(Request $request)
     {
+        $this->validate($request, Book::$rules);
+        $book = new Book;
+        $form = $request->all();
+
+        unset($form['_token']);
+
+        $book->fill($form);
+        $book->save();
+
         return redirect('user/book/create');
     }
 
