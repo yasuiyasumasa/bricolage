@@ -12,6 +12,11 @@ class KeywordController extends Controller
         return redirect('user/keyword/create');
     }
 
+    public function index()
+    {
+        return view('user.keyword.index');
+    }
+        
     public function edit()
     {
         return view('user.keyword.edit');

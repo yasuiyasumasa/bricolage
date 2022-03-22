@@ -36,7 +36,7 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth'], function() {
     Route::get('highlight_memo/delete', 'User\HighlightmemoController@delete');
 
     Route::post('keyword/create', 'User\KeywordController@create');
-    Route::get('keyword/edit', 'User\KeywordController@edit'); 
+    Route::get('keyword', 'User\KeywordController@index'); 
     Route::post('keyword/edit', 'User\KeywordController@update');
     Route::get('keyword/delete', 'User\KeywordController@delete');
 });
