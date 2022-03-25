@@ -1,41 +1,98 @@
 @extends('layouts.user')
-@section('title', 'キーワード')
+@section('title', 'ランキング')
 
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>キーワードTOP10</h2>
-                <form action="{{ action('User\BookController@create') }}" method="post" enctype="multipart/form-data">
+                <h2>頻出キーワードTOP10</h2>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                    @if (count($errors) > 0)
-                        <ul>
-                            @foreach($errors->all() as $e)
-                                <li>{{ $e }}</li>
-                            @endforeach
-                        </ul>
-                    @endif
-                    <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2">本文</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2">画像</label>
-                        <div class="col-md-10">
-                            <input type="file" class="form-control-file" name="image">
-                        </div>
-                    </div>
-                    {{ csrf_field() }}
-                    <input type="submit" class="btn btn-primary" value="更新">
-                </form>
+                <style>
+                #ex_chart {max-width:640px;max-height:480px;}
+                </style>
+
+                <canvas id="ex_chart"></canvas>
+
+                <script>
+                var ctx = document.getElementById('ex_chart');
+
+                var data = {
+                    labels: ["ああああ", "いいいい", "うううう", "ええええ", "おおおお", "かかかか", "きききき", "くくくく", "けけけけ", "ここここ"],
+                    datasets: [{
+                        label: '使用頻度1',
+                        data: [121, 103, 60, 52, 31, 29, 26, 27, 9, 7],
+                        backgroundColor: 'rgba(255, 100, 100, 1)'
+                    }]
+                };
+
+                var options = {
+                    indexAxis: 'y',
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                min: 0
+                            }
+                        }]
+                    }
+                };
+
+                var ex_chart = new Chart(ctx, {
+                    type: 'bar',
+                    data: data,
+                    options: options
+                });
+                </script>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2>頻出単語TOP10</h2>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <style>
+                #ex_chart {max-width:640px;max-height:480px;}
+                </style>
+
+                <canvas id="ex_chart"></canvas>
+
+                <script>
+                var ctx = document.getElementById('ex_chart');
+
+                var data = {
+                    labels: ["ああああ", "いいいい", "うううう", "ええええ", "おおおお", "かかかか", "きききき", "くくくく", "けけけけ", "ここここ"],
+                    datasets: [{
+                        label: '使用頻度2',
+                        data: [121, 103, 60, 52, 31, 29, 26, 27, 9, 7],
+                        backgroundColor: 'rgba(255, 100, 100, 1)'
+                    }]
+                };
+
+                var options = {
+                    indexAxis: 'y',
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                min: 0
+                            }
+                        }]
+                    }
+                };
+
+                var ex_chart = new Chart(ctx, {
+                    type: 'bar',
+                    data: data,
+                    options: options
+                });
+                </script>
+
+                
             </div>
         </div>
     </div>

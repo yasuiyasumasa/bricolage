@@ -1,7 +1,7 @@
 @extends('layouts.user')
 @section('title', 'bricolage')
 @section('content')
-  <div class="container">
+  <div class="container text-center">
     <div class="row">
       <div class="col-md-8 mx-auto">
         <h2>"ブリコラージュ bricolage”とは</h2>
