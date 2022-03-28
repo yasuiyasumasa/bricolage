@@ -4,6 +4,7 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-md-8 mx-auto">
+        <h2></h2>
         <h2>"ブリコラージュ bricolage”とは</h2>
         <h2>フランス語の”日曜大工”という意味である</h2>
         <h2>日曜大工には、自分で何かを作るために</h2>

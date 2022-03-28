@@ -1,6 +1,5 @@
 @extends('layouts.user')
 @section('title', 'ランキング')
-
 @section('content')
     <div class="container">
         <div class="row">
@@ -21,7 +20,7 @@
                     labels: ["ああああ", "いいいい", "うううう", "ええええ", "おおおお", "かかかか", "きききき", "くくくく", "けけけけ", "ここここ"],
                     datasets: [{
                         label: '使用頻度1',
-                        data: [121, 103, 60, 52, 31, 29, 26, 27, 9, 7],
+                        data: [121, 103, 60, 52, 31, 29, 27, 25, 9, 7],
                         backgroundColor: 'rgba(255, 100, 100, 1)'
                     }]
                 };
@@ -50,7 +49,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container2">
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>頻出単語TOP10</h2>

@@ -2,41 +2,18 @@
 @section('title', '本棚')
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <h2>本棚</h2>
-                <form action="{{ action('User\BookController@create') }}" method="post" enctype="multipart/form-data">
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <div class="card img-thumbnail">
+      <img class="card-img-top" src="..." alt="画像">
+      <div class="card-body px-2 py-3">
+        <h5 class="card-title">タイトル</h5>
+        <p class="card-text">コンテンツ コンテンツ コンテンツ コンテンツ</p>
+        <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">ボタン</a> <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p>
 
-                    @if (count($errors) > 0)
-                        <ul>
-                            @foreach($errors->all() as $e)
-                                <li>{{ $e }}</li>
-                            @endforeach
-                        </ul>
-                    @endif
-                    <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2">本文</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2">画像</label>
-                        <div class="col-md-10">
-                            <input type="file" class="form-control-file" name="image">
-                        </div>
-                    </div>
-                    {{ csrf_field() }}
-                    <input type="submit" class="btn btn-primary" value="更新">
-                </form>
-            </div>
-        </div>
-    </div>
+      </div><!-- /.card-body -->
+    </div><!-- /.card -->
+  </div><!-- /.col-sm-6.col-md-3 -->
+  ...
+</div><!-- /.row -->
 @endsection
