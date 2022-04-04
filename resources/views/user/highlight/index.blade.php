@@ -1,40 +1,119 @@
 @extends('layouts.user')
 @section('title', 'キーワード')
 @section('content')
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div class="card-columns bg-dark p-5">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://localhost/bricolage/public/image/book_cover/WS000005.JPG" alt="" class="card-img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">タイトル</h5>
+        <h6 class="card-author">著者</h6>
+        <h6 class="card-publisher">出版社</h6>
+        <h6 class="card-first_issue_date">発行日</h6>
+        <h6 class="card-isbn_code">ISBN</h5>
+        <h6 class="card-day_i_read">読んだ日</h6>
+        <h6 class="card-highlight">ハイライト○件</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://localhost/bricolage/public/image/book_cover/WS000006.JPG" alt="" class="card-img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">タイトル</h5>
+        <h6 class="card-author">著者</h6>
+        <h6 class="card-publisher">出版社</h6>
+        <h6 class="card-first_issue_date">発行日</h6>
+        <h6 class="card-isbn_code">ISBN</h5>
+        <h6 class="card-day_i_read">読んだ日</h6>
+        <h6 class="card-highlight">ハイライト○件</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://localhost/bricolage/public/image/book_cover/WS000007.JPG" alt="" class="card-img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">タイトル</h5>
+        <h6 class="card-author">著者</h6>
+        <h6 class="card-publisher">出版社</h6>
+        <h6 class="card-first_issue_date">発行日</h6>
+        <h6 class="card-isbn_code">ISBN</h5>
+        <h6 class="card-day_i_read">読んだ日</h6>
+        <h6 class="card-highlight">ハイライト○件</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://localhost/bricolage/public/image/book_cover/WS000008.JPG" alt="" class="card-img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">タイトル</h5>
+        <h6 class="card-author">著者</h6>
+        <h6 class="card-publisher">出版社</h6>
+        <h6 class="card-first_issue_date">発行日</h6>
+        <h6 class="card-isbn_code">ISBN</h5>
+        <h6 class="card-day_i_read">読んだ日</h6>
+        <h6 class="card-highlight">ハイライト○件</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://localhost/bricolage/public/image/book_cover/WS000009.JPG" alt="" class="card-img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">タイトル</h5>
+        <h6 class="card-author">著者</h6>
+        <h6 class="card-publisher">出版社</h6>
+        <h6 class="card-first_issue_date">発行日</h6>
+        <h6 class="card-isbn_code">ISBN</h5>
+        <h6 class="card-day_i_read">読んだ日</h6>
+        <h6 class="card-highlight">ハイライト○件</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://localhost/bricolage/public/image/book_cover/WS0000010.JPG" alt="" class="card-img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">タイトル</h5>
+        <h6 class="card-author">著者</h6>
+        <h6 class="card-publisher">出版社</h6>
+        <h6 class="card-first_issue_date">発行日</h6>
+        <h6 class="card-isbn_code">ISBN</h5>
+        <h6 class="card-day_i_read">読んだ日</h6>
+        <h6 class="card-highlight">ハイライト○件</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://localhost/bricolage/public/image/book_cover/WS0000011.JPG" alt="" class="card-img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">タイトル</h5>
+        <h6 class="card-author">著者</h6>
+        <h6 class="card-publisher">出版社</h6>
+        <h6 class="card-first_issue_date">発行日</h6>
+        <h6 class="card-isbn_code">ISBN</h5>
+        <h6 class="card-day_i_read">読んだ日</h6>
+        <h6 class="card-highlight">ハイライト○件</h6>
+      </div>
+    </div>
+  </div>
 
-<style>
-#ex_chart {max-width:640px;max-height:480px;}
-</style>
-
-<canvas id="ex_chart"></canvas>
-
-<script>
-var ctx = document.getElementById('ex_chart');
-
-var data = {
-    labels: ["平成26年", "平成27年", "平成28年", "平成29年", "平成30年"],
-    datasets: [{
-        label: '得点',
-        data: [880, 740, 900, 520, 930],
-        backgroundColor: 'rgba(255, 100, 100, 1)'
-    }]
-};
-
-var options = {
-    scales: {
-        yAxes: [{
-            ticks: {
-                min: 300
-            }
-        }]
-    }
-};
-
-var ex_chart = new Chart(ctx, {
-    type: 'bar',
-    data: data,
-    options: options
-});
-</script>
+</div>
 @endsection
