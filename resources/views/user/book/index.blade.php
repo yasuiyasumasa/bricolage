@@ -36,6 +36,7 @@
     <div class="text-center">
       <button class="btn btn-sm btn-outline-secondary" type="submit">検索</button>
     </div>
+    
   </form>
   <hr>
 </div>
