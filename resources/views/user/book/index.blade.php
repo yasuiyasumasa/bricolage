@@ -1,5 +1,6 @@
 @extends('layouts.user')
 @section('title', '本棚')
+
 @section('content')
 <div class="container" th:fragment="search">
   <form th:action="@{/book/search}" method="get">
@@ -46,9 +47,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -60,9 +65,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -74,9 +83,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -88,9 +101,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -105,9 +122,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -119,9 +140,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -133,10 +158,14 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
+      </div>
       </div>
     </div>
   </div>
@@ -147,9 +176,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -164,9 +197,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -178,9 +215,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -192,9 +233,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
         </div>
       </div>
     </div>
@@ -206,10 +251,13 @@
       </div>
       <div class="col-lg-6">
         <div class="card-body">
-          <h4 class="card-title">書籍名</h4>
-          <p class="card-text">著者　出版社　出版年月日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
+          <h5 class="card-title">書籍名</h5>
+          <h6>著者</h6>
+          <h6>出版社</h6>
+          <h6>出版年月日</h6>
+          <h6>ISBN</h6>
+          <h6>価格</h6>
+          <h6>読んだ日</h6>
       </div>
     </div>
   </div>

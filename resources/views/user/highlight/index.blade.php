@@ -1,180 +1,23 @@
 @extends('layouts.user')
 @section('title', 'ハイライト')
+
 @section('content')
-<div class="card-deck">
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000001.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000002.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000003.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000004.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> 
-<p> </p>
-<div class="card-deck">
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000005.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000006.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000007.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000008.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
+
+<div class="container">
+  <div class="row">
+      <img class="img-fluid" src="http://localhost/bricolage/public/image/book_cover/WS000001.JPG" width=100 height=100 alt="Book image">
+    <div class="col-lg-6">
+      <div class="body">
+        <h3 class="title">書籍名</h3>
+        <p class="auther">著者</p>
+        <p class="publisher">出版社</p>
+        <p class="publisher_day">出版年月日</p>
+        <p class="ISBN">ISBNコード</p>
+        <p class="read_day">読んだ日</p>
+        <p class="highlight">ハイライト○件</p>
       </div>
     </div>
   </div>
 </div>
-<p> </p>
-<div class="card-deck">
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000009.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000010.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000011.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000012.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">著者　出版社　発行日　ISBN　読んだ日　ハイライト○件</p>
-          <a href="#" class="btn btn-light">Go highlight</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 @endsection

@@ -14,7 +14,7 @@
             </ul>
           @endif
           <div class="form-group form-inline input-group-sm">
-            <span class="col-md-3 text-md-right">書籍情報の取得</span>
+            <span class="col-md-3 text-md-left">書籍情報の取得</span>
           </div>
 
           <div class="form-group form-inline input-group-sm">
@@ -29,7 +29,7 @@
           <hr>
 
           <div class="form-group form-inline input-group-sm">
-            <span class="col-md-3 text-md-right">オリジナル書籍の登録フォーム</span>
+            <span class="col-md-4 text-md-left">オリジナル書籍の登録</span>
           </div>
 
           <div class="form-group form-inline input-group-sm">
@@ -39,6 +39,25 @@
             <span class="col-sm-10 text-danger small" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
           </div>
           
+
+          <div class="form-group form-inline input-group-sm">
+            <span class="col-md-2 text-md-right">画像</span>
+            <div class="input-group">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputFile">
+                <span class="col-sm-2"></span>
+
+                <label class="custom-file-label" for="inputFile" data-browse="参照">ファイルを選択</label>
+                <span class="col-sm-10 text-danger small" th:if="${#fields.hasErrors('inputFile')}" th:errors="*{inputFile}"></span>
+
+
+              </div>
+              <div class="input-group-append">
+                <button type="button" class="btn btn-outline-secondary input-group-text" id="inputFileReset">取消</button>
+              </div>
+            </div>
+          </div>
+
           <div class="form-group form-inline input-group-sm">
             <span class="col-md-2 text-md-right">ISBNコード</span>
             <input type="text" class="form-control col-sm-10" id="isbn" name="isbn" th:value="*{isbn}" placeholder="ISBNコード">

@@ -29,7 +29,7 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow">
         <div class="container">
           <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('app.name', 'bricolage') }}
+            <img alt="ブランド" src="http://localhost/bricolage/public/image/logo_new_w.png" width="30" height="30">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
               <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="/bricolage/public">ホーム</a>
+                      <a class="nav-link" href="/bricolage/public">⌂</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="/bricolage/public/user/book">本棚</a>
