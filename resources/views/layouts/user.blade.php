@@ -101,4 +101,15 @@
       </main>
     </div>
   </body>
+
+  <footer>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h4 style="margin-bottom:15px">ここにfooterを記載します</h4>
+        </div>
+      </div>
+    </div>  
+  </footer>
+
 </html>

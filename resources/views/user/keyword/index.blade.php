@@ -25,12 +25,10 @@
           options: {
             indexAxis: 'y',
             scales: {
-              x: {
-                stacked: true,
-              },
-              y: {
-                stacked: true
-              }
+              x: [{
+              }],
+              y: [{
+              }],
             },
             responsive: false
           }
@@ -39,8 +37,15 @@
     </script>
   </head>
   <body>
-    <canvas id="Keyword_frequent_ranking_TOP10" width="500" height="500"></canvas>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <canvas id="Keyword_frequent_ranking_TOP10" width="500" height="500"></canvas>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
 
 @endsection
