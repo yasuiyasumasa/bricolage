@@ -102,14 +102,63 @@
     </div>
   </body>
 
-  <footer>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h4 style="margin-bottom:15px">ここにfooterを記載します</h4>
-        </div>
+<!--
+  <footer id="footer01" class="footer outer-block">
+    <div class="container navbar-expand-md navbar-dark bg-dark shadow">
+
+      <ul class="nav">
+        <li><a href="https://b-risk.jp/works/">WORKS</a></li>
+        <li><a href="https://b-risk.jp/blog/">BLOG</a></li>
+        <li><a href="https://b-risk.jp/recruit/">RECRUIT</a></li>
+        <li><a href="https://b-risk.jp/company/">COMPANY</a></li>
+        <li><a href="https://b-risk.jp/contact/">CONTACT</a></li>
+      </ul>
+      <p class="copyright">
+        COPYRIGHT © BRISK Inc. All rights Reserved.
+      </p>
+    </div> 
+  </footer>
+  -->
+
+
+  <footer class="navbar navbar-expand-md navbar-dark bg-dark shadow">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link">| </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">© 2021 Yasui</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">| </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.google.com">利用規約</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">| </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.google.com">プライバシーポリシー</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">| </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.google.com">お問い合わせ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">| </a>
+          </li>
+        </ul>
       </div>
-    </div>  
+    </div>
   </footer>
 
 </html>

@@ -2,7 +2,7 @@
 @section('title', '本棚')
 
 @section('content')
-<div class="container" th:fragment="search">
+<div class="container">
   <form th:action="@{/book/search}" method="get">
     <div class="form-group form-inline input-group-sm">
       <label for="name" class="col-md-2 control-label">書籍名</label>
@@ -40,225 +40,232 @@
   </form>
   <hr>
 </div>
-<div class="card-deck">
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000001.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000001.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000002.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000002.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000003.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000003.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000004.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000004.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div> 
+  </div> 
+</div>
 <p> </p>
-<div class="card-deck">
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000005.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000005.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000006.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000006.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000007.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
-      </div>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000007.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+        </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000008.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000008.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<p> </p>
-<div class="card-deck">
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000009.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+  <p> </p>
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000009.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000010.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000010.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000011.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000011.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-lg-6">
-        <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000012.JPG" alt="Card image">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body">
-          <h5 class="card-title">書籍名</h5>
-          <h6>著者</h6>
-          <h6>出版社</h6>
-          <h6>出版年月日</h6>
-          <h6>ISBN</h6>
-          <h6>価格</h6>
-          <h6>読んだ日</h6>
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <img class="card-img" src="http://localhost/bricolage/public/image/book_cover/WS000012.JPG" alt="Card image">
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">書籍名</h5>
+            <h6>著者</h6>
+            <h6>出版社</h6>
+            <h6>出版年月日</h6>
+            <h6>ISBN</h6>
+            <h6>価格</h6>
+            <h6>読んだ日</h6>
+        </div>
       </div>
     </div>
   </div>

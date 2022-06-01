@@ -3,37 +3,173 @@
 
 @section('content')
 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="http://localhost/bricolage/public/image/book_cover/WS000004.JPG" alt="Card image">
+<div class="container" th:fragment="search">
+  <form th:action="@{/highlight/search}" method="get">
+    <div class="form-group form-inline input-group-sm">
+      <label for="name" class="col-md-2 control-label">キーワード</label>
+      <input type="text" class="form-control col-md-3" id="name" name="name" placeholder="キーワード">
+      <button class="btn btn-sm btn-outline-secondary" type="submit">検索</button>
+      <label for="isbn" class="col-md-2 control-label">ランダム5件</label>
+      <button class="btn btn-sm btn-outline-secondary" type="submit">検索</button>
+      <label for="isbn" class="col-md-2 control-label">関連なし5件</label>
+      <button class="btn btn-sm btn-outline-secondary" type="submit">検索</button>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">書籍名</h5>
-        <h6>著者</h6>
-        <h6>出版社</h6>
-        <h6>出版年月日</h6>
-        <h6>ISBN</h6>
-        <h6>価格</h6>
-        <h6>読んだ日</h6>      </div>
-    </div>
-  </div>
+  </from>
+  <hr>
 </div>
 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="http://localhost/bricolage/public/image/book_cover/WS000004.JPG" alt="Card image">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
+      </div> 
+    </div> 
+
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>ああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div> 
+
+<p> </p>
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
+      </div> 
+    </div> 
+    
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>ああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> 
+</div> 
+
+<p> </p>
+
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
+      </div> 
+    </div> 
+    
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="card-body">
+            <h5 class="card-title">ハイライト</h5>
+            <h6>ああああああああああ</h6>
+            <h5 class="card-title">キーワード</h5>
+            <h6>いいい、ううう、えええ</h6>
+            <h5 class="card-title">メモ</h5>
+            <h6>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> 
+</div> 
 
 @endsection
