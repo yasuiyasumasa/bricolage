@@ -35,6 +35,7 @@
       </div> 
     </div> 
 
+
     <div class="card">
       <div class="row no-gutters">
         <div class="col-lg-12">
@@ -171,5 +172,6 @@
 
   </div> 
 </div> 
+
 
 @endsection
