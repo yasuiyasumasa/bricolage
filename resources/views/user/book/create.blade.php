@@ -54,7 +54,6 @@
             </div>
           </div>
 
-          
           <div class="form-group form-inline input-group-sm">
             <span class="col-md-2 text-md-right">ISBNコード</span>
             <input type="text" class="form-control col-sm-10" id="isbn" name="isbn" th:value="*{isbn}" placeholder="ISBNコード">
