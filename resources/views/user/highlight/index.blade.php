@@ -3,10 +3,14 @@
 
 @section('content')
 
+<!-- Start Top SaerchBox -->
+
 <div class="container" th:fragment="search">
   <form th:action="@{/highlight/search}" method="get">
     <div class="form-group form-inline input-group-sm">
-      <label for="name" class="col-md-2 control-label">検索</label>
+      <label for="name" class="col-md-2 control-label">検索
+
+      </label>
       <input type="text" class="form-control col-md-3" id="name" name="name" placeholder="キーワード">
       <button class="btn btn-sm btn-outline-secondary" type="submit">検索</button>
       <label for="isbn" class="col-md-2 control-label">ランダム5件</label>
@@ -18,6 +22,10 @@
   <hr>
 </div>
 
+<!-- End Top SaerchBox -->
+
+<!-- Start Main Cards -->
+
 <div class="container">
   <div class="card-deck">
     <div class="card">
@@ -171,6 +179,16 @@
 
   </div> 
 </div> 
+
+<header>
+  <ul>
+    <li class="list-item"></li>
+    <li class="list-item"></li>
+    <li class="list-item"></li>
+    <li class="list-item"></li>
+  </ul>
+</header>
+
 
 
 @endsection
