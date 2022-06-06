@@ -3,7 +3,7 @@
 
 @section('content')
 
-<!-- Start Top SaerchBox -->
+<!-- Start Top SaerchBoxs -->
 
 <div class="container" th:fragment="search">
   <form th:action="@{/highlight/search}" method="get">
@@ -22,9 +22,9 @@
   <hr>
 </div>
 
-<!-- End Top SaerchBox -->
+<!-- End Top SaerchBoxs -->
 
-<!-- Start Main Cards -->
+<!-- Start Main Cards 1st -->
 
 <div class="container">
   <div class="card-deck">
@@ -76,7 +76,11 @@
   </div> 
 </div> 
 
+<!-- End Main Cards 1st -->
+
 <p> </p>
+
+<!-- Start Main Cards 2nd -->
 
 <div class="container">
   <div class="card-deck">
@@ -128,7 +132,11 @@
   </div> 
 </div> 
 
+<!-- End Main Cards 2nd -->
+
 <p> </p>
+
+<!-- Start Main Cards 3rd -->
 
 <div class="container">
   <div class="card-deck">
@@ -176,19 +184,9 @@
         </div>
       </div>
     </div>
-
   </div> 
 </div> 
 
-<header>
-  <ul>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-  </ul>
-</header>
-
-
+<!-- End Main Cards 3rd -->
 
 @endsection

@@ -2,6 +2,9 @@
 @section('title', '本棚')
 
 @section('content')
+
+<!-- Start Top SaerchBoxs -->
+
 <div class="container">
   <form th:action="@{/book/search}" method="get">
     <div class="form-group form-inline input-group-sm">
@@ -41,6 +44,9 @@
   <hr>
 </div>
 
+<!-- End Top SaerchBoxs -->
+
+<!-- Start Main Cards 1st -->
 <div class="container">
   <div class="card-deck">
     <div class="card">
@@ -117,9 +123,12 @@
     </div>
   </div> 
 </div>
+
+<!-- End Main Cards 1st -->
+
 <p> </p>
 
-
+<!-- Start Main Cards 2nd -->
 
 <div class="container">
   <div class="card-deck">
@@ -197,7 +206,13 @@
     </div>
   </div>
 </div>
-  <p> </p>
+
+<!-- End Main Cards 2nd -->
+
+<p> </p>
+
+<!-- Start Main Cards 3rd -->
+
 <div class="container">
   <div class="card-deck">
     <div class="card">
@@ -273,4 +288,7 @@
     </div>
   </div>
 </div>
+
+<!-- End Main Cards 3rd -->
+
 @endsection
