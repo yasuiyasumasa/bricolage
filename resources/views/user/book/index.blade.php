@@ -4,7 +4,6 @@
 @section('content')
 
 <!-- Start Top SaerchBoxs -->
-
 <!DOCTYPE html>
 <html>
   <div class="container">
@@ -49,7 +48,7 @@
   <!-- End Top SaerchBoxs -->
 
   <!-- Start Main Cards 1st -->
-  
+
   <div class="container">
     <div class="card-deck">
       <div class="card">
