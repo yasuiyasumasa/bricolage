@@ -7,7 +7,6 @@
 
 <!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="UTF-8" />
     <title>bar chart</title>
@@ -49,6 +48,5 @@
     </div>
   </body>
 </html>
-
 
 @endsection
