@@ -5,6 +5,7 @@
 
 <!-- Reference URL https://codelikes.com/javascript-chart-bar/ -->
 
+
 <!DOCTYPE html>
 <html>
   <head>
