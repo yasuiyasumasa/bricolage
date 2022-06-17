@@ -24,6 +24,7 @@
               data: [121, 103, 60, 52, 31, 29, 27, 25, 9, 7],
               backgroundColor: ['#e0e0e0']
             }],
+            
           },
           options: {
             indexAxis: 'y',
