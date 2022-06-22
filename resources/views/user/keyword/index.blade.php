@@ -5,7 +5,6 @@
 
 <!-- Reference URL https://codelikes.com/javascript-chart-bar/ -->
 
- 
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,8 +24,6 @@
               backgroundColor: ['#e0e0e0']
             }],
             
-
-
           },
           options: {
             indexAxis: 'y',
