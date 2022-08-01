@@ -50,13 +50,4 @@
   </body>
 </html>
 
-
-
-
-
-
-
-
-
-
 @endsection
