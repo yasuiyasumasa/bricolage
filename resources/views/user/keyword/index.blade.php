@@ -51,12 +51,4 @@
   </body>
 </html>
 
-
-
-
-
-
-
-
-
 @endsection

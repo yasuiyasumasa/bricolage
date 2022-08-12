@@ -18,14 +18,4 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 @endsection
